@@ -1,0 +1,4 @@
+{"data": [{"slug": "data-engineer-berlin-1", "company_name": "Zalando", "title": "Data Engineer (m/f/d)", "description": "<p>Airflow, dbt and Snowflake.</p>",
+           "remote": false, "url": "https://www.arbeitnow.com/jobs/1", "tags": ["Data"], "job_types": ["full-time"], "location": "Berlin", "created_at": 1756900000},
+          {"slug": "nurse-1", "company_name": "Clinic", "title": "Nurse", "description": "x", "remote": false, "url": "u", "tags": [], "job_types": [], "location": "Berlin", "created_at": 1756900000}],
+ "links": {"next": null}, "meta": {}}

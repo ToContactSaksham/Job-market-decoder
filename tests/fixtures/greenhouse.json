@@ -1,0 +1,4 @@
+{"jobs": [{"id": 9001, "title": "Staff Data Engineer", "updated_at": "2026-09-20T00:00:00-04:00", "location": {"name": "New York, NY"},
+           "content": "&lt;p&gt;Spark, Kafka, Scala. Base range $190,000 - $240,000 per year.&lt;/p&gt;", "absolute_url": "https://boards.greenhouse.io/x/9001",
+           "departments": [{"name": "Data Platform"}]},
+          {"id": 9002, "title": "Account Executive", "updated_at": "2026-09-20T00:00:00-04:00", "location": {"name": "Austin, TX"}, "content": "sales", "absolute_url": "u", "departments": []}]}

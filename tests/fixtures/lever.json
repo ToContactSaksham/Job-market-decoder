@@ -1,0 +1,4 @@
+[{"id": "abc", "text": "Analytics Engineer", "categories": {"location": "London, UK", "team": "Data", "commitment": "Full-time"},
+  "descriptionPlain": "dbt and Looker on BigQuery.", "description": "<p>dbt and Looker on BigQuery.</p>",
+  "lists": [{"text": "Requirements", "content": "<li>SQL</li><li>Python</li>"}], "hostedUrl": "https://jobs.lever.co/x/abc", "createdAt": 1757000000000,
+  "salaryRange": {"min": 70000, "max": 90000, "currency": "GBP", "interval": "per-year-salary"}}]

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+.ipynb_checkpoints/
+# generated data (re-create with `jmd scrape` / `jmd synth` / `jmd build`)
+data/raw/live/
+data/raw/demo/
+data/processed/

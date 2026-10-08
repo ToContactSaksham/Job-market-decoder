@@ -1,0 +1,118 @@
+# Skill taxonomy for data roles.
+# Each entry: canonical name -> {category, patterns: [regex...]}.
+# Patterns are matched case-insensitively against posting text unless they
+# contain the (?-i) flag. Keep patterns tight: false positives are worse than
+# misses, because every downstream statistic is built on these matches.
+
+languages:
+  Python:        ['\bpython\b', '\bpy(?:3)?\b(?=\s*[,/)])']
+  SQL:           ['\bsql\b', '\bt-sql\b', '\bpl/?sql\b']
+  R:             ['(?<![\w/\-])R(?=[\s,;/)]+(?:and|or|,|/|programming|language|studio|shiny|markdown|tidyverse|ggplot))', '\b(?:in|with|using|of|or|and|,|/)\s*R\b(?![\w&+#])', '\bR\s*(?:programming|language|studio|shiny|markdown|script)', '(?-i)\bR/Python\b', '(?-i)\bPython/R\b', '(?-i)\bPython, R\b', '(?-i)\bR, Python\b']
+  Scala:         ['\bscala\b']
+  Java:          ['\bjava\b(?!\s*script)']
+  JavaScript:    ['\bjavascript\b', '\bjs\b', '\btypescript\b']
+  "C++":         ['\bc\+\+']
+  Go:            ['\bgolang\b', '(?-i)\bGo\b(?=\s*[,/)]|\s+(?:and|or|programming|lang))']
+  Julia:         ['\bjulia\b']
+  SAS:           ['(?-i)\bSAS\b']
+  MATLAB:        ['\bmatlab\b']
+  Bash:          ['\bbash\b', '\bshell script', '\bunix\b', '\blinux\b']
+
+data_engineering:
+  Spark:         ['\b(?:apache\s+)?spark\b', '\bpyspark\b', '\bsparksql\b']
+  Hadoop:        ['\bhadoop\b', '\bhdfs\b', '\bmapreduce\b', '\bhive\b']
+  Kafka:         ['\bkafka\b']
+  Airflow:       ['\bairflow\b']
+  dbt:           ['\bdbt\b']
+  Databricks:    ['\bdatabricks\b']
+  Snowflake:     ['\bsnowflake\b']
+  BigQuery:      ['\bbig\s?query\b']
+  Redshift:      ['\bredshift\b']
+  ETL:           ['\betl\b', '\belt\b', '\bdata pipelines?\b']
+  Data Warehousing: ['\bdata warehous', '\bdata lake', '\blakehouse\b', '\bdimensional model', '\bstar schema']
+  Flink:         ['\bflink\b']
+  Fivetran:      ['\bfivetran\b', '\bstitch\b']
+  Prefect:       ['\bprefect\b', '\bdagster\b', '\bluigi\b']
+
+databases:
+  PostgreSQL:    ['\bpostgres(?:ql)?\b']
+  MySQL:         ['\bmysql\b', '\bmariadb\b']
+  MongoDB:       ['\bmongo(?:db)?\b']
+  Cassandra:     ['\bcassandra\b']
+  Redis:         ['\bredis\b']
+  Elasticsearch: ['\belastic\s?search\b', '\bopensearch\b']
+  SQL Server:    ['\bsql server\b', '\bmssql\b', '\bssis\b', '\bssrs\b']
+  Oracle:        ['\boracle\b(?!\s+cloud)']
+  DynamoDB:      ['\bdynamodb\b']
+  NoSQL:         ['\bnosql\b']
+  Neo4j:         ['\bneo4j\b', '\bgraph database']
+
+cloud:
+  AWS:           ['\baws\b', '\bamazon web services\b', '\bs3\b', '\bec2\b', '\bsagemaker\b', '\bemr\b', '\bathena\b', '\bglue\b', '\blambda\b']
+  Azure:         ['\bazure\b', '\bsynapse\b', '\bazure data factory\b', '\badf\b']
+  GCP:           ['\bgcp\b', '\bgoogle cloud\b', '\bvertex ai\b', '\bdataflow\b', '\bdataproc\b']
+  Docker:        ['\bdocker\b', '\bcontainers?\b']
+  Kubernetes:    ['\bkubernetes\b', '\bk8s\b', '\bhelm\b']
+  Terraform:     ['\bterraform\b', '\binfrastructure as code\b', '\biac\b']
+  CI/CD:         ['\bci/?cd\b', '\bcontinuous integration\b', '\bjenkins\b', '\bgithub actions\b', '\bgitlab ci\b']
+  Git:           ['\bgit\b', '\bgithub\b', '\bgitlab\b', '\bbitbucket\b', '\bversion control\b']
+
+ml_ai:
+  Machine Learning: ['\bmachine learning\b', '\bml\b', '\bsupervised\b', '\bunsupervised\b', '\bpredictive model']
+  Deep Learning: ['\bdeep learning\b', '\bneural net', '\bcnn\b', '\brnn\b', '\btransformers?\b(?!\s+(?:to|the))']
+  scikit-learn:  ['\bscikit[\s\-]?learn\b', '\bsklearn\b']
+  TensorFlow:    ['\btensorflow\b', '\bkeras\b']
+  PyTorch:       ['\bpytorch\b', '\btorch\b']
+  XGBoost:       ['\bxgboost\b', '\blightgbm\b', '\bcatboost\b', '\bgradient boost']
+  NLP:           ['\bnlp\b', '\bnatural language processing\b', '\btext mining\b', '\bspacy\b', '\bnltk\b']
+  LLMs:          ['\bllms?\b', '\blarge language model', '\bgenerative ai\b', '\bgen\s?ai\b', '\bgpt\b', '\bopenai\b', '\bprompt engineering\b', '\brag\b', '\blangchain\b', '\bfine[\s\-]?tun']
+  Computer Vision: ['\bcomputer vision\b', '\bopencv\b', '\bimage (?:recognition|classification|segmentation)']
+  MLOps:         ['\bmlops\b', '\bmlflow\b', '\bmodel (?:deployment|serving|monitoring|registry)', '\bfeature store', '\bkubeflow\b', '\bweights\s*&\s*biases\b', '\bwandb\b']
+  Recommender Systems: ['\brecommend(?:er|ation) (?:system|engine)s?\b', '\bpersonali[sz]ation\b']
+  Time Series:   ['\btime[\s\-]series\b', '\bforecasting\b', '\barima\b', '\bprophet\b']
+  Reinforcement Learning: ['\breinforcement learning\b', '\bbandits?\b']
+  Hugging Face:  ['\bhugging\s?face\b']
+
+statistics:
+  Statistics:    ['\bstatistic(?:s|al)\b', '\bhypothesis test', '\bregression\b', '\bprobability\b', '\binference\b']
+  A/B Testing:   ['\ba/?b test', '\bexperiment(?:ation|al design)\b', '\bsplit test', '\bmultivariate test']
+  Causal Inference: ['\bcausal (?:inference|impact|model)', '\buplift\b', '\bdifference[\s\-]in[\s\-]differences\b', '\bpropensity\b', '\binstrumental variable']
+  Bayesian:      ['\bbayesian\b', '\bpymc\b', '\bstan\b(?=[\s,.)])']
+  Optimization:  ['\boptimi[sz]ation\b', '\blinear programming\b', '\boperations research\b']
+  Econometrics:  ['\beconometric']
+
+analytics_bi:
+  Tableau:       ['\btableau\b']
+  Power BI:      ['\bpower\s?bi\b']
+  Looker:        ['\blooker\b', '\blookml\b']
+  Excel:         ['\bexcel\b', '\bspreadsheets?\b', '\bpivot tables?\b', '\bvlookup\b', '\bgoogle sheets\b']
+  Data Visualization: ['\bdata vi[sz]uali[sz]ation\b', '\bdashboard', '\bmatplotlib\b', '\bseaborn\b', '\bplotly\b', '\bggplot', '\bd3(?:\.js)?\b']
+  Metabase:      ['\bmetabase\b', '\bsuperset\b', '\bredash\b', '\bmode analytics\b', '\bsisense\b', '\bqlik']
+  Google Analytics: ['\bgoogle analytics\b', '\bga4\b', '\badobe analytics\b', '\bmixpanel\b', '\bamplitude\b']
+  Alteryx:       ['\balteryx\b', '\bknime\b']
+  Data Modeling: ['\bdata model(?:ing|ling)?\b', '\bsemantic layer']
+  Metrics & KPIs: ['\bkpis?\b', '\bmetrics? (?:definition|design|framework)', '\bnorth star']
+
+data_management:
+  Data Quality:  ['\bdata quality\b', '\bdata validation\b', '\bgreat expectations\b', '\bdata observability\b']
+  Data Governance: ['\bdata governance\b', '\bdata catalog', '\bmetadata management\b', '\bdata lineage\b', '\bmaster data\b']
+  Privacy & Compliance: ['\bgdpr\b', '\bhipaa\b', '\bccpa\b', '\bsoc\s?2\b', '\bpii\b']
+
+tooling:
+  pandas:        ['\bpandas\b', '\bnumpy\b', '\bpolars\b']
+  Jupyter:       ['\bjupyter\b', '\bnotebooks?\b']
+  APIs:          ['\brest(?:ful)? api', '\bapis?\b', '\bgraphql\b', '\bweb services\b']
+  Streamlit:     ['\bstreamlit\b', '\bdash\b(?=[\s,.)])', '\bgradio\b', '\bshiny\b']
+  FastAPI:       ['\bfastapi\b', '\bflask\b', '\bdjango\b']
+  Software Engineering: ['\bsoftware engineering\b', '\bunit test', '\btest[\s\-]driven\b', '\bcode review', '\bdesign patterns\b', '\bobject[\s\-]oriented\b', '\boop\b']
+  Web Scraping:  ['\bweb scrap', '\bscrapy\b', '\bbeautifulsoup\b', '\bselenium\b']
+
+domain_soft:
+  Communication: ['\bcommunicat(?:e|ion)\b', '\bpresent(?:ation|ing) (?:to|findings|results|insights)', '\bstorytelling\b']
+  Stakeholder Management: ['\bstakeholder', '\bcross[\s\-]functional\b', '\bbusiness partner']
+  Product Analytics: ['\bproduct analytics\b', '\bproduct metrics\b', '\bfunnel (?:analysis|metrics|conversion)', '\bretention analysis\b', '\buser behaviou?r analytics']
+  Agile:         ['\bagile\b', '\bscrum\b', '\bkanban\b', '\bjira\b']
+  Finance Domain: ['\bfinancial (?:services|modeling|analysis)\b', '\bfintech\b', '\bbanking\b', '\btrading\b', '\brisk model']
+  Healthcare Domain: ['\bhealthcare\b', '\bclinical\b', '\bbiotech\b', '\bpharma']
+  Marketing Analytics: ['\bmarketing analytics\b', '\battribution\b', '\bcustomer segmentation\b', '\bltv\b', '\bchurn\b', '\bcampaign']
+  Supply Chain:  ['\bsupply chain\b', '\blogistics\b', '\binventory\b', '\bdemand planning\b']

@@ -1,0 +1,57 @@
+pattern,city,country
+"san francisco|\bsf\b|bay area|south san francisco|menlo park|palo alto|mountain view|sunnyvale|san jose|redwood city|oakland",San Francisco Bay Area,US
+"new york|\bnyc\b|\bny\b|manhattan|brooklyn|jersey city",New York,US
+"seattle|bellevue|redmond|kirkland",Seattle,US
+"austin",Austin,US
+"chicago",Chicago,US
+"boston|cambridge, ma|waltham",Boston,US
+"los angeles|\bla\b|santa monica|culver city|irvine|pasadena",Los Angeles,US
+"denver|boulder",Denver,US
+"atlanta",Atlanta,US
+"dallas|plano|fort worth|irving",Dallas,US
+"washington,? dc|\bdc\b|arlington|mclean|reston|bethesda",Washington DC,US
+"san diego",San Diego,US
+"portland",Portland,US
+"phoenix|scottsdale|tempe",Phoenix,US
+"miami|fort lauderdale",Miami,US
+"philadelphia",Philadelphia,US
+"minneapolis|st\.? paul",Minneapolis,US
+"houston",Houston,US
+"salt lake|lehi|provo",Salt Lake City,US
+"raleigh|durham|chapel hill",Raleigh-Durham,US
+"nashville",Nashville,US
+"charlotte",Charlotte,US
+"pittsburgh",Pittsburgh,US
+"detroit|ann arbor",Detroit,US
+"london",London,UK
+"manchester",Manchester,UK
+"edinburgh",Edinburgh,UK
+"dublin",Dublin,IE
+"berlin",Berlin,DE
+"munich|münchen",Munich,DE
+"hamburg",Hamburg,DE
+"frankfurt",Frankfurt,DE
+"amsterdam",Amsterdam,NL
+"paris",Paris,FR
+"madrid",Madrid,ES
+"barcelona",Barcelona,ES
+"lisbon",Lisbon,PT
+"zurich|zürich",Zurich,CH
+"stockholm",Stockholm,SE
+"copenhagen",Copenhagen,DK
+"warsaw",Warsaw,PL
+"toronto",Toronto,CA
+"vancouver",Vancouver,CA
+"montreal|montréal",Montreal,CA
+"bangalore|bengaluru",Bangalore,IN
+"hyderabad",Hyderabad,IN
+"mumbai",Mumbai,IN
+"pune",Pune,IN
+"delhi|gurgaon|gurugram|noida",Delhi NCR,IN
+"singapore",Singapore,SG
+"sydney",Sydney,AU
+"melbourne",Melbourne,AU
+"tel aviv",Tel Aviv,IL
+"tokyo",Tokyo,JP
+"são paulo|sao paulo",São Paulo,BR
+"mexico city|cdmx",Mexico City,MX

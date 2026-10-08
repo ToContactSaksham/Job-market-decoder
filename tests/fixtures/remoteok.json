@@ -1,0 +1,6 @@
+[{"legal": "API Terms of Service: ..."},
+ {"id": "100001", "slug": "senior-data-scientist-acme", "company": "Acme", "position": "Senior Data Scientist", "tags": ["python", "data science", "sql"],
+  "description": "<p>We need <b>Python</b>, SQL and PyTorch. Salary $150,000 - $190,000.</p><ul><li>Spark</li><li>AWS</li></ul>",
+  "location": "Worldwide", "salary_min": 150000, "salary_max": 190000, "url": "https://remoteok.com/remote-jobs/100001", "date": "2026-09-01T12:00:00+00:00"},
+ {"id": "100002", "slug": "frontend-dev", "company": "Beta", "position": "Frontend Developer", "tags": ["react"], "description": "React", "location": "Remote",
+  "salary_min": 0, "salary_max": 0, "url": "https://remoteok.com/remote-jobs/100002", "date": "2026-09-02T12:00:00+00:00"}]

@@ -1,0 +1,3 @@
+{"jobs": [{"id": 55, "url": "https://jobicy.com/jobs/55", "jobTitle": "Machine Learning Engineer", "companyName": "Jobicy Inc", "jobIndustry": ["Engineering"],
+           "jobType": ["full-time"], "jobGeo": "USA", "jobLevel": "Senior", "jobExcerpt": "ML", "jobDescription": "<p>PyTorch, Kubernetes, MLflow.</p>",
+           "pubDate": "2026-09-10 10:00:00", "annualSalaryMin": "160000", "annualSalaryMax": "200000", "salaryCurrency": "USD"}]}
